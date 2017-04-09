@@ -1,7 +1,7 @@
 
 body {
     padding-top: 70px; 
-    background-color: #000;
+    background-color: #2a2a2a;
     font-size: 16px 
     font: 'Roboto';
     background: url(../image/bokehroad.jpg) no-repeat center center;
@@ -45,21 +45,28 @@ h3 {
     }
 
 .navbar-default {
-    background-color: #000;
+    background-color: rgba(42, 42, 42, 0.90);
     margin-bottom: 0;
     border:0;
 }
 
 .navbar-default .navbar-nav>li>a {
     font-family: 'Roboto', sans-serif; 
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
     color: #FFF;
-    padding-top: 33px;
-    padding-bottom: 10px;
+    padding-top: 30px;
     line-height: 20px;
 }
 
+li.active>a, a:focus, a:hover {
+    border-top: 2px solid #337ab7;
+    color: #337ab7 !important; 
+}
+
 .navbar-brand {
-    height: 80px;
+    height: 70px;
     padding: 16px 0px;
 }
 
@@ -123,17 +130,38 @@ h3 {
     position: absolute;
     margin: -5% auto;
     background: rgba(255,255,255,.3);
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
 }
 
 @media (max-width: 768px){
-.event-box h2 h1 {
+.event-box {
     background: rgba(255,255,255,.3);
-    padding: 10px;
-    margin: -6% auto;
+    padding: 0.1% 0.3%;
+    margin: -3% auto auto 1%;
     border-radius: 5px;
     font-size: 14px;
+    }
+}
+
+@media (max-width: 768px){
+h1 {
+    font-size: 20px;
+    display: inline-block;
+    }
+}
+
+@media (max-width: 768px){
+h2 {
+    font-size: 18px;
+    display: inline-block;
+    }
+}
+
+@media (max-width: 768px){
+h3 {
+    font-size: 16px;
+    display: inline-block;
     }
 }
 
@@ -160,7 +188,7 @@ h3 {
 }
 
 .btn.btn-default {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -266,9 +294,10 @@ input, select, textarea {
 
 footer {
     width: 100%;
+    margin: 0;
 	display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1%;
+    padding-bottom: 1%;
     background-color: #38393c;
 }
 
@@ -294,6 +323,19 @@ ul.social-network {
     margin-left:0 !important;
     padding: 0;
 }
+
+
+@media (max-width: 768px) {
+    ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+    float: left;
+}
+
+}
+
 ul.social-network li {
     display: inline;
     margin: 0 5px;
