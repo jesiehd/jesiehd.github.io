@@ -1,19 +1,20 @@
 
 body {
     padding-top: 70px; 
-    background-color: #2a2a2a;
+    background-color: #e7e7e7;
     font-size: 16px 
     font: 'Roboto';
-    background: url(../image/bokehroad.jpg) no-repeat center center;
+    background: url(../image/b_workhard.jpg) no-repeat center center;
     background-size: cover;
 }
 
 h1 {
     font-family: 'roboto', sans-serif;
-    font-size: 38px;
+    font-size: 50px;
     font-weight: 700;
     color: #fff;
     text-shadow: 3px 3px 6px #000;
+    padding: 10px 10px;
 
 }
 
@@ -60,7 +61,7 @@ h3 {
     line-height: 20px;
 }
 
-li.active>a, a:focus, a:hover {
+li.active>a, a:focus, a:hover, a:active {
     border-top: 2px solid #337ab7;
     color: #337ab7 !important; 
 }
@@ -130,15 +131,39 @@ li.active>a, a:focus, a:hover {
     position: absolute;
     margin: -5% auto;
     background: rgba(255,255,255,.3);
-    padding: 20px;
+    padding: 0.1%;
     border-radius: 5px;
 }
 
 @media (max-width: 768px){
 .event-box {
     background: rgba(255,255,255,.3);
-    padding: 0.1% 0.3%;
-    margin: -3% auto auto 1%;
+    padding: -0.1% -0.1%;
+    margin: -6% auto auto 1%;
+    border-radius: 5px;
+    font-size: 14px;
+    }
+}
+
+.story-box {
+    display: block;
+    position: absolute;
+    margin: -5% auto;
+    background: rgba(255,255,255,.6);
+    padding: 0.5%;
+    border-radius: 5px;
+}
+
+.story-box>p {
+    color: #000;
+    margin: 2%;
+}
+
+@media (max-width: 768px){
+.story-box {
+    background: rgba(255,255,255,.3);
+    padding: -0.1% -0.1%;
+    margin: -6% auto auto 1%;
     border-radius: 5px;
     font-size: 14px;
     }
@@ -146,28 +171,23 @@ li.active>a, a:focus, a:hover {
 
 @media (max-width: 768px){
 h1 {
-    font-size: 20px;
-    display: inline-block;
+    font-size: 25px;
     }
 }
 
 @media (max-width: 768px){
 h2 {
-    font-size: 18px;
-    display: inline-block;
+    font-size: 20px;
     }
 }
 
 @media (max-width: 768px){
 h3 {
     font-size: 16px;
-    display: inline-block;
     }
 }
 
 #testimonial {
-    background: url(../image/bokehroad.jpg) no-repeat center center;
-    background-size: cover;
     padding: 10%;
 }
 
