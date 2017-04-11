@@ -1,13 +1,14 @@
 
 
-$('.main-caro').slick({
-  dots: false,
-  infinite: true,
-  autoplay: false,
-  autoplaySpeed: 1000,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-  mobileFirst: true,
+if ($('.main-caro').length) {
+  $('.main-caro').slick({
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    autoplaySpeed: 1000,
+    slidesToShow: 1,
+    adaptiveHeight: true,
+    mobileFirst: true,
   // responsive: [
   //     {
   //       breakpoint: 992,
@@ -36,13 +37,16 @@ $('.main-caro').slick({
   //   // settings: "unslick"
   //   // instead of a settings object
   //   ]
-});
+    });
+}
 
 
-var $grid = $('.grid').isotope({
+if ($('.grid').length) {
+  var $grid = $('.grid').isotope({
   // options
     itemSelector: '.element-item',
-});
+    });
+  }
 
   // bind filter button click
 $('.filter-button-group').on( 'click', 'button', function() {
@@ -50,4 +54,12 @@ $('.filter-button-group').on( 'click', 'button', function() {
   $grid.isotope({ filter: filterValue });
 });
 
+// console.log( $("body").height() );
+// console.log( $(window).height() );
 
+var bodyHeight = $("body").height();
+var windowHeight = $(window).height();
+
+if (bodyHeight < windowHeight) {
+  $("footer").addClass("footerfixed");
+}

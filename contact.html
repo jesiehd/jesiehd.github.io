@@ -47,47 +47,53 @@
   </div><!-- /.container-fluid -->
 </nav> <!-- End of the navigation menu -->
 
+
+
 <section id="g-map-add  embed-responsive">
   <div class="container">
-    <iframe  class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?q=Level%2013%2F50%20Carrington%20Street%2C%20Sydney%2C%20New%20South%20Wales%2C%20Australia&key=AIzaSyBpfrVapCqH9hXdaAcGvpkYkzHEALB7_k4" allowfullscreen>
-    </iframe>
+    <div class="row">
+      <div class="col-xs-6">
+        <iframe  class="embed-responsive-item" width="95%" height="450px" src="https://www.google.com/maps/embed/v1/place?q=Level%2013%2F50%20Carrington%20Street%2C%20Sydney%2C%20New%20South%20Wales%2C%20Australia&key=AIzaSyBpfrVapCqH9hXdaAcGvpkYkzHEALB7_k4" allowfullscreen>
+        </iframe>
+
+          <div id="contact-info">
+            PONT3 PTY LTD <br>
+
+            Level 13, 50 Carrington St<br>
+            Wynyard, Sydney NSW<br>
+            Australia<br>
+            <br>
+            T +61 02 9282 0400<br>
+            E info@pont3.com<br>
+            E support@pont3.com<br>
+          </div>
+      </div>
+
+      <div class="col-xs-6">
+        <form action="form-submit.php" method="post" enctype="text/plain">
+          <h1>Have Enquiries?</h1>
+          <p>Fill out the form below and ask us!</p>
+          <label for="name">Name:</label><span>*</span><br>
+          <input type="text" name="firstName" placeholder="Enter your first name" required><br>
+          <label for="email">Email:</label><span>*</span><br>
+          <input type="email" name="emailAddress" placeholder="Enter your email" value="" required><br>
+          <label for="subject">Subject:</label><span>*</span><br>
+          <select name="subject" required>
+          <option value="select">Select A Subject For This Enquiry</option>
+          <option value="events">Events</option>
+          <option value="marketing">Marketing</option>
+          <option value="sponsorship">Sponsorship</option>
+          <option value="operations">Operations</option>
+          <option value="risk">Risk Management</option>
+          </select><br>
+          <textarea rows="4" cols="50" placeholder="Type Your Enquiry Here" required></textarea><br>
+          <input id="submit" type="submit" value="Submit"><br>
+        </form>
+      </div>
+
+    </div>
   </div>
 </section>
-
-<form action="form-submit.php" method="post" enctype="text/plain">
-  <h1>Have Enquiries?</h1>
-  <p>Fill out the form below and ask us!</p>
-  <label for="name">Name:</label><span>*</span><br>
-    <input type="text" name="firstName" placeholder="Enter your first name" required><br>
-    <label for="email">Email:</label><span>*</span><br>
-    <input type="email" name="emailAddress" placeholder="Enter your email" value=" " required><br>
-    <label for="subject">Subject:</label><span>*</span><br>
-      <select name="subject" required>
-      <option value="select">Select A Subject For This Enquiry</option>
-      <option value="events">Events</option>
-      <option value="marketing">Marketing</option>
-      <option value="sponsorship">Sponsorship</option>
-      <option value="operations">Operations</option>
-      <option value="risk">Risk Management</option>
-    </select><br>
-    <textarea rows="4" cols="50" placeholder="Type Your Enquiry Here" required></textarea><br>
-    <input id="submit" type="submit" value="Submit"><br>
-</form>
-
-
-<!-- <section id="contact-info" class="container">
-<div>
-PONT3 PTY LTD <br>
-
-Level 13, 50 Carrington St<br>
-Wynyard, Sydney NSW<br>
-Australia<br>
-<br>
-T +61 02 9282 0400<br>
-E info@pont3.com<br>
-E support@pont3.com<br>
-</div>
-</section> -->
 
 <footer class="footer">
   <div class="container">
@@ -110,8 +116,6 @@ E support@pont3.com<br>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/flickity.pkgd.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 
 </body>
